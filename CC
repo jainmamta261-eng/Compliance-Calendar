@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Compliance Calendar FY 2026–27</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #f5f2ec;
@@ -32,7 +32,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: 'Instrument Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     background: var(--bg);
     color: var(--ink);
     min-height: 100vh;
@@ -56,7 +56,7 @@
   .header-badge {
     background: var(--accent);
     color: #fff;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 11px;
     font-weight: 500;
     padding: 4px 10px;
@@ -64,7 +64,7 @@
     letter-spacing: 0.08em;
   }
   .header-title {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 22px;
     letter-spacing: -0.02em;
   }
@@ -76,7 +76,7 @@
     padding: 12px 40px;
     font-size: 12px;
     color: var(--ink3);
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -98,7 +98,7 @@
     margin: 0 auto;
   }
   .overview-title {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 40px;
     letter-spacing: -0.03em;
     margin-bottom: 8px;
@@ -145,11 +145,11 @@
     background: rgba(255,255,255,0.12);
     border-radius: 50%;
   }
-  .q-num { font-family: 'DM Serif Display', serif; font-size: 48px; color: rgba(255,255,255,0.25); line-height: 1; }
+  .q-num { font-family: 'Inter', sans-serif; font-size: 48px; color: rgba(255,255,255,0.25); line-height: 1; }
   .q-label { font-size: 18px; font-weight: 700; color: #fff; margin-top: -8px; }
   .q-months { font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 4px; }
   .q-body { padding: 20px 24px 24px; }
-  .q-count { font-family: 'DM Mono', monospace; font-size: 28px; font-weight: 500; color: var(--qcolor); }
+  .q-count { font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 500; color: var(--qcolor); }
   .q-count-label { font-size: 11px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
   .q-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
   .q-chip { font-size: 10px; padding: 3px 8px; border-radius: 20px; background: var(--bg); color: var(--ink2); font-weight: 500; }
@@ -176,7 +176,7 @@
     border-left: 3px solid var(--border);
     font-size: 13px;
   }
-  .dl-date { font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; color: var(--ink3); min-width: 55px; }
+  .dl-date { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; color: var(--ink3); min-width: 55px; }
   .dl-desc { color: var(--ink); font-size: 12px; }
 
   /* ── QUARTER VIEW ── */
@@ -198,7 +198,7 @@
     background: var(--qcolor);
   }
   .quarter-title-block h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 32px;
     letter-spacing: -0.02em;
   }
@@ -219,8 +219,8 @@
     border-bottom: 1px solid var(--border);
     display: flex; justify-content: space-between; align-items: center;
   }
-  .month-name { font-family: 'DM Serif Display', serif; font-size: 20px; }
-  .month-year { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--ink3); }
+  .month-name { font-family: 'Inter', sans-serif; font-size: 20px; }
+  .month-year { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--ink3); }
   .month-filing-count {
     display: none;
   }
@@ -240,15 +240,13 @@
     cursor: default;
     transition: transform .15s, background .15s;
     position: relative;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
   }
   .day-cell.has-filing {
     cursor: pointer;
     font-weight: 700;
     color: var(--ink);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1.5px;
+    text-decoration: none;
   }
   .day-cell.has-filing:hover { transform: scale(1.15); z-index: 2; }
   .day-num { display: contents; }
@@ -272,7 +270,7 @@
   }
   .filing-pill:hover { background: var(--bg); }
   .filing-date {
-    font-family: 'DM Mono', monospace; font-size: 11px;
+    font-family: 'Inter', sans-serif; font-size: 11px;
     min-width: 24px; text-align: center;
     padding: 2px 6px; border-radius: 4px;
     color: #fff; font-weight: 500;
@@ -296,9 +294,9 @@
     text-align: center;
     min-width: 100px;
   }
-  .detail-day { font-family: 'DM Serif Display', serif; font-size: 52px; line-height: 1; }
+  .detail-day { font-family: 'Inter', sans-serif; font-size: 52px; line-height: 1; }
   .detail-month-year { font-size: 13px; opacity: .85; margin-top: 2px; }
-  .detail-title-block h2 { font-family: 'DM Serif Display', serif; font-size: 28px; letter-spacing: -0.02em; }
+  .detail-title-block h2 { font-family: 'Inter', sans-serif; font-size: 28px; letter-spacing: -0.02em; }
   .detail-title-block p { font-size: 13px; color: var(--ink3); margin-top: 4px; }
 
   .filings-list { display: flex; flex-direction: column; gap: 14px; }
@@ -317,7 +315,7 @@
   .law-badge {
     font-size: 11px; font-weight: 700; padding: 4px 10px;
     border-radius: 5px; color: #fff; white-space: nowrap;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
   }
   .form-name { font-weight: 700; font-size: 15px; }
   .filing-card-body { padding: 14px 20px 16px; }
@@ -373,7 +371,7 @@
     font-size: 11.5px;
     font-weight: 600;
     cursor: pointer;
-    font-family: 'Instrument Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     transition: all .2s;
     white-space: nowrap;
     align-self: flex-start;
@@ -391,7 +389,7 @@
     color: var(--ink2);
     font-size: 12px; font-weight: 600;
     cursor: pointer;
-    font-family: 'Instrument Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     transition: all .2s;
   }
   .cal-btn:hover { background: var(--bg); border-color: var(--accent); color: var(--accent); }
@@ -428,7 +426,7 @@
   }
   .cal-option:hover { border-color: var(--accent); background: var(--bg); }
   .cal-option-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .cal-close-btn { width: 100%; padding: 10px; border-radius: 8px; border: 1.5px solid var(--border); background: transparent; color: var(--ink3); font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'Instrument Sans', sans-serif; transition: all .15s; }
+  .cal-close-btn { width: 100%; padding: 10px; border-radius: 8px; border: 1.5px solid var(--border); background: transparent; color: var(--ink3); font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; transition: all .15s; }
   .cal-close-btn:hover { background: var(--bg); }
 
   /* back button */
@@ -436,7 +434,7 @@
     display: inline-flex; align-items: center; gap: 8px;
     cursor: pointer; color: var(--ink3); font-size: 13px; font-weight: 500;
     margin-bottom: 24px; padding: 8px 0;
-    transition: color .2s; border: none; background: none; font-family: 'Instrument Sans', sans-serif;
+    transition: color .2s; border: none; background: none; font-family: 'Inter', sans-serif;
   }
   .back-btn:hover { color: var(--ink); }
   .back-btn svg { transition: transform .2s; }
@@ -487,7 +485,7 @@
   .all-dates-header {
     display: flex; align-items: center; gap: 16px; margin-bottom: 28px; flex-wrap: wrap;
   }
-  .all-dates-title { font-family: 'DM Serif Display', serif; font-size: 32px; letter-spacing: -0.02em; }
+  .all-dates-title { font-family: 'Inter', sans-serif; font-size: 32px; letter-spacing: -0.02em; }
   .all-dates-sub { font-size: 13px; color: var(--ink3); margin-top: 2px; }
   .all-dates-filter {
     display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px;
@@ -495,7 +493,7 @@
   .filter-btn {
     padding: 6px 14px; border-radius: 20px; border: 1.5px solid var(--border);
     background: var(--surface); cursor: pointer; font-size: 12px; font-weight: 600;
-    font-family: 'Instrument Sans', sans-serif; transition: all .15s; color: var(--ink2);
+    font-family: 'Inter', sans-serif; transition: all .15s; color: var(--ink2);
   }
   .filter-btn.active { border-color: var(--btn-color); background: var(--btn-color); color: #fff; }
   .filter-btn:hover:not(.active) { border-color: var(--btn-color); color: var(--btn-color); }
@@ -513,8 +511,8 @@
   .adt-head { background: var(--ink); color: #fff; font-weight: 700; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; }
   .adt-head:hover { background: var(--ink); }
   .adt-cell { padding: 11px 14px; font-size: 12px; }
-  .adt-date-cell { font-family: 'DM Mono', monospace; font-weight: 600; font-size: 12px; }
-  .adt-law-badge { display: inline-block; padding: 3px 8px; border-radius: 4px; color: #fff; font-size: 10px; font-weight: 700; font-family: 'DM Mono', monospace; }
+  .adt-date-cell { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 12px; }
+  .adt-law-badge { display: inline-block; padding: 3px 8px; border-radius: 4px; color: #fff; font-size: 10px; font-weight: 700; font-family: 'Inter', sans-serif; }
   .adt-freq { font-size: 10px; color: var(--ink3); background: var(--bg); padding: 3px 8px; border-radius: 12px; display: inline-block; }
   @media (max-width: 768px) {
     .adt-row { grid-template-columns: 80px 100px 1fr; }
@@ -543,23 +541,23 @@
   .modal-overlay.open { display:flex; }
   .modal-box { background:var(--surface); border-radius:16px; max-width:660px; width:100%; max-height:88vh; overflow-y:auto; box-shadow:0 24px 80px rgba(0,0,0,.25); animation:fadeUp .25s ease; }
   .modal-header { background:var(--ink); color:#fff; padding:18px 24px 14px; border-radius:16px 16px 0 0; position:sticky; top:0; z-index:10; display:flex; align-items:flex-start; justify-content:space-between; gap:14px; }
-  .modal-header h3 { font-family:'DM Serif Display',serif; font-size:19px; }
+  .modal-header h3 { font-family:'Inter',sans-serif; font-size:19px; }
   .modal-header p { font-size:11px; color:rgba(255,255,255,.5); margin-top:2px; }
   .modal-close { background:rgba(255,255,255,.12); border:none; color:#fff; border-radius:50%; width:30px; height:30px; cursor:pointer; font-size:16px; flex-shrink:0; display:flex; align-items:center; justify-content:center; }
   .modal-close:hover { background:rgba(255,255,255,.22); }
   .modal-body { padding:20px 24px; }
   /* Search specific */
   .search-input-wrap { position:relative; margin-bottom:14px; }
-  .search-input { width:100%; padding:11px 14px 11px 40px; border:1.5px solid var(--border); border-radius:10px; font-size:14px; font-family:'Instrument Sans',sans-serif; background:var(--surface2); color:var(--ink); outline:none; transition:border-color .2s; }
+  .search-input { width:100%; padding:11px 14px 11px 40px; border:1.5px solid var(--border); border-radius:10px; font-size:14px; font-family:'Inter',sans-serif; background:var(--surface2); color:var(--ink); outline:none; transition:border-color .2s; }
   .search-input:focus { border-color:var(--ink); }
   .search-icon { position:absolute; left:13px; top:50%; transform:translateY(-50%); color:var(--ink3); pointer-events:none; }
   .search-filters { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:14px; }
-  .search-filter-btn { padding:4px 12px; border-radius:20px; border:1.5px solid var(--border); background:var(--surface); font-size:11.5px; font-weight:600; cursor:pointer; font-family:'Instrument Sans',sans-serif; transition:all .15s; color:var(--ink2); }
+  .search-filter-btn { padding:4px 12px; border-radius:20px; border:1.5px solid var(--border); background:var(--surface); font-size:11.5px; font-weight:600; cursor:pointer; font-family:'Inter',sans-serif; transition:all .15s; color:var(--ink2); }
   .search-filter-btn.active { background:var(--ink); color:#fff; border-color:var(--ink); }
   .search-results { max-height:55vh; overflow-y:auto; }
   .search-result-item { padding:10px 14px; border-radius:8px; background:var(--surface2); margin-bottom:6px; cursor:pointer; transition:background .15s; border-left:3px solid var(--border); }
   .search-result-item:hover { background:var(--bg); }
-  .search-result-date { font-family:'DM Mono',monospace; font-size:11px; font-weight:600; color:var(--ink3); }
+  .search-result-date { font-family:'Inter',sans-serif; font-size:11px; font-weight:600; color:var(--ink3); }
   .search-result-form { font-size:13px; font-weight:700; color:var(--ink); margin-top:1px; }
   .search-result-desc { font-size:11.5px; color:var(--ink2); margin-top:2px; line-height:1.4; }
   .search-no-result { text-align:center; padding:32px; color:var(--ink3); font-size:14px; }
@@ -595,6 +593,106 @@
     border-radius: 50%;
   }
 
+  /* ── DASHBOARD PANEL ── */
+  .dash-panel {
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .dash-panel-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+  }
+  .dash-tab {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--ink3);
+    font-family: 'Inter', sans-serif;
+    transition: all .15s;
+    position: relative;
+    text-align: center;
+  }
+  .dash-tab.active {
+    color: var(--ink);
+    background: var(--surface2);
+  }
+  .dash-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent);
+  }
+  .dash-tab-count {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 10px; font-weight: 700;
+    min-width: 18px; height: 18px;
+    padding: 0 5px;
+    margin-left: 6px;
+  }
+  .dash-tab-count.zero {
+    background: var(--border);
+    color: var(--ink3);
+  }
+  .dash-body { padding: 16px 20px; min-height: 80px; }
+  .dash-empty {
+    text-align: center;
+    padding: 28px 16px;
+    color: var(--ink3);
+    font-size: 13px;
+  }
+  .dash-empty-icon { font-size: 28px; margin-bottom: 8px; }
+  .dash-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    cursor: pointer;
+    transition: background .12s;
+  }
+  .dash-row:hover { background: var(--bg); }
+  .dash-row:last-child { margin-bottom: 0; }
+  .dash-row-date {
+    min-width: 52px;
+    font-size: 11px; font-weight: 700;
+    color: var(--ink3);
+    text-align: center;
+    line-height: 1.3;
+  }
+  .dash-row-date .dd { font-size: 18px; font-weight: 800; color: var(--ink); display: block; }
+  .dash-row-date.today-date .dd { color: var(--accent); }
+  .dash-row-info { flex: 1; min-width: 0; }
+  .dash-row-form { font-size: 13px; font-weight: 700; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .dash-row-desc { font-size: 11px; color: var(--ink3); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .dash-row-badge { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; color: #fff; white-space: nowrap; }
+  .dash-today-label {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: #fef3f0; color: var(--accent);
+    border: 1px solid #f5c8be;
+    border-radius: 20px; padding: 2px 8px;
+    font-size: 10px; font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .dash-week-label {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: #f0f7ff; color: #2563eb;
+    border: 1px solid #bfdbfe;
+    border-radius: 20px; padding: 2px 8px;
+    font-size: 10px; font-weight: 700;
+    margin-bottom: 10px;
+  }
   .section-divider { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--ink3); font-weight: 600; margin: 16px 0 8px; }
 </style>
 </head>
@@ -622,7 +720,7 @@
   <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
     <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
-  <span style="font-size:11.5px;font-weight:600;font-family:'Instrument Sans',sans-serif;color:var(--ink2)">Back</span>
+  <span style="font-size:11.5px;font-weight:600;font-family:'Inter',sans-serif;color:var(--ink2)">Back</span>
 </button>
 
 <!-- ===== OVERVIEW VIEW ===== -->
@@ -633,19 +731,19 @@
     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:16px;">
       <div class="overview-title">FY 2026–27 Compliance</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <button onclick="goAllDates()" style="display:inline-flex;align-items:center;gap:6px;background:var(--surface);color:var(--ink);border:1.5px solid var(--border);border-radius:10px;padding:8px 16px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:background .2s;" onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background='var(--surface)'">
+        <button onclick="goAllDates()" style="display:inline-flex;align-items:center;gap:6px;background:var(--surface);color:var(--ink);border:1.5px solid var(--border);border-radius:10px;padding:8px 16px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s;" onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background='var(--surface)'">
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="1" y="2" width="14" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M5 1v2M11 1v2M1 6h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M4 9h2M7 9h2M10 9h2M4 12h2M7 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
           All Due Dates
         </button>
-        <button onclick="goActWise()" style="display:inline-flex;align-items:center;gap:6px;background:var(--surface);color:var(--ink);border:1.5px solid var(--border);border-radius:10px;padding:8px 16px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:all .2s;" onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background='var(--surface)'">
+        <button onclick="goActWise()" style="display:inline-flex;align-items:center;gap:6px;background:var(--surface);color:var(--ink);border:1.5px solid var(--border);border-radius:10px;padding:8px 16px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;" onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background='var(--surface)'">
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="1" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="1" y="9" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="9" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
           Act Wise
         </button>
-        <button onclick="openSearch()" style="display:inline-flex;align-items:center;gap:6px;background:var(--surface);color:var(--ink);border:1.5px solid var(--border);border-radius:10px;padding:8px 16px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:all .2s;" onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background='var(--surface)'">
+        <button onclick="openSearch()" style="display:inline-flex;align-items:center;gap:6px;background:var(--surface);color:var(--ink);border:1.5px solid var(--border);border-radius:10px;padding:8px 16px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;" onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background='var(--surface)'">
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
           Search
         </button>
-        <button onclick="openInstructions()" style="display:inline-flex;align-items:center;gap:6px;background:var(--surface);color:var(--ink);border:1.5px solid var(--border);border-radius:10px;padding:8px 16px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:all .2s;" onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background='var(--surface)'">
+        <button onclick="openInstructions()" style="display:inline-flex;align-items:center;gap:6px;background:var(--surface);color:var(--ink);border:1.5px solid var(--border);border-radius:10px;padding:8px 16px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;" onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background='var(--surface)'">
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 7v5M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
           How to Use
         </button>
@@ -656,16 +754,16 @@
     <div style="margin-bottom:20px;">
       <div style="font-size:10.5px;font-weight:700;color:var(--ink3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Download Law-wise Compliance Schedules</div>
       <div style="display:flex;gap:7px;flex-wrap:wrap;">
-        <button onclick="downloadPDF('Income Tax')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#6b728015;border:1.5px solid #6b7280;color:#6b7280;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:all .2s;" onmouseover="this.style.background='#6b728030'" onmouseout="this.style.background='#6b728015'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Income Tax Act</button>
-        <button onclick="downloadPDF('GST')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#1e8a5c15;border:1.5px solid #1e8a5c;color:#1e8a5c;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:all .2s;" onmouseover="this.style.background='#1e8a5c30'" onmouseout="this.style.background='#1e8a5c15'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>GST</button>
-        <button onclick="downloadPDF('Companies')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#9b3faa15;border:1.5px solid #9b3faa;color:#9b3faa;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:all .2s;" onmouseover="this.style.background='#9b3faa30'" onmouseout="this.style.background='#9b3faa15'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Companies Act</button>
-        <button onclick="downloadPDF('FEMA')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#c84b2f15;border:1.5px solid #c84b2f;color:#c84b2f;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:all .2s;" onmouseover="this.style.background='#c84b2f30'" onmouseout="this.style.background='#c84b2f15'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>FEMA & RBI</button>
-        <button onclick="downloadPDF('Labour')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#e8a02015;border:1.5px solid #e8a020;color:#e8a020;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:all .2s;" onmouseover="this.style.background='#e8a02030'" onmouseout="this.style.background='#e8a02015'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Labour</button>
+        <button onclick="downloadPDF('Income Tax')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#6b728015;border:1.5px solid #6b7280;color:#6b7280;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;" onmouseover="this.style.background='#6b728030'" onmouseout="this.style.background='#6b728015'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Income Tax Act</button>
+        <button onclick="downloadPDF('GST')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#1e8a5c15;border:1.5px solid #1e8a5c;color:#1e8a5c;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;" onmouseover="this.style.background='#1e8a5c30'" onmouseout="this.style.background='#1e8a5c15'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>GST</button>
+        <button onclick="downloadPDF('Companies')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#9b3faa15;border:1.5px solid #9b3faa;color:#9b3faa;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;" onmouseover="this.style.background='#9b3faa30'" onmouseout="this.style.background='#9b3faa15'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Companies Act</button>
+        <button onclick="downloadPDF('FEMA')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#c84b2f15;border:1.5px solid #c84b2f;color:#c84b2f;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;" onmouseover="this.style.background='#c84b2f30'" onmouseout="this.style.background='#c84b2f15'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>FEMA & RBI</button>
+        <button onclick="downloadPDF('Labour')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#e8a02015;border:1.5px solid #e8a020;color:#e8a020;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;" onmouseover="this.style.background='#e8a02030'" onmouseout="this.style.background='#e8a02015'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Labour</button>
         
         
         
-        <button onclick="downloadPDF('Consolidated')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#1a171415;border:1.5px solid #1a1714;color:#1a1714;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:all .2s;" onmouseover="this.style.background='#1a171430'" onmouseout="this.style.background='#1a171415'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>All Laws</button>
-        <button onclick="downloadExcel()" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#16773215;border:1.5px solid #167732;color:#167732;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Instrument Sans',sans-serif;transition:all .2s;" onmouseover="this.style.background='#16773230'" onmouseout="this.style.background='#16773215'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M2 3h12v10H2z" stroke="currentColor" stroke-width="1.5"/><path d="M6 3v10M2 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Excel</button>
+        <button onclick="downloadPDF('Consolidated')" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#1a171415;border:1.5px solid #1a1714;color:#1a1714;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;" onmouseover="this.style.background='#1a171430'" onmouseout="this.style.background='#1a171415'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>All Laws</button>
+        <button onclick="downloadExcel()" style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:7px;background:#16773215;border:1.5px solid #167732;color:#167732;font-size:11.5px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;" onmouseover="this.style.background='#16773230'" onmouseout="this.style.background='#16773215'"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M2 3h12v10H2z" stroke="currentColor" stroke-width="1.5"/><path d="M6 3v10M2 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Excel</button>
       </div>
     </div>
     <div class="legend-bar">
@@ -675,6 +773,9 @@
       <div class="legend-item"><div class="legend-dot" style="background:var(--fema)"></div>FEMA &amp; RBI</div>
       <div class="legend-item"><div class="legend-dot" style="background:var(--labour)"></div>Labour</div>
     </div>
+
+    <!-- ===== DASHBOARD WIDGET ===== -->
+    <div id="dashboard-panel" style="margin-bottom:28px;"></div>
 
     <div class="q-grid">
       <div id="dash-qcard-Q1" class="q-card" style="--qcolor:var(--q1)" onclick="goQuarter('Q1')">
@@ -813,7 +914,7 @@ const FILINGS = {
     { date: 30, law: 'Companies', form: 'MSME-1', desc: 'Half-yearly return for outstanding dues to MSME vendors', freq: 'Half-Yearly' },
     { date: 30, law: 'Income Tax', form: 'Form 24G (Govt TDS)', desc: 'Filing of Form 24G by Government offices that paid TDS/TCS without challan for March 2026', freq: 'Monthly' },
     { date: 30, law: 'Income Tax', form: 'TDS Deposit (Mar)', desc: 'Deposit TDS deducted during March (special: April 30)', freq: 'Annual' },
-    { date: 30, law: 'Labour', form: 'Professional Tax', desc: 'Pay Professional Tax for applicable period (state-wise)', freq: 'Monthly' },
+    { date: 30, law: 'Labour', form: 'Professional Tax', desc: 'Professional Tax due date varies by state — Maharashtra: 28th/31st Mar & Sep; Karnataka: 20th of each month; Telangana/AP: 10th of following month; West Bengal: 21st of month; Tamil Nadu: varies by municipality. The 30th is an indicative outer limit; verify exact due date per your state.', freq: 'Monthly' },
   ],
   'May 2026': [
     { date:  7, law: 'FEMA', form: 'ECB-2 Return', desc: 'Monthly return for external commercial borrowings', freq: 'Monthly' },
@@ -859,7 +960,7 @@ const FILINGS = {
     { date: 30, law: 'Companies', form: 'MBP-1', desc: 'Director\u2019s disclosure of interest in other entities / companies', freq: 'Annual' },
     { date: 30, law: 'FEMA', form: 'IEC Renewal', desc: 'Complete IEC renewal/update on DGFT portal under Foreign Trade Policy', freq: 'Annual' },
     { date: 30, law: 'Income Tax', form: 'Form 1 – Equalisation Levy', desc: 'Annual return for Equalisation Levy under Finance Act 2016', freq: 'Annual' },
-    { date: 30, law: 'Labour', form: 'LWF Contribution (H1)', desc: 'Labour Welfare Fund contribution for H1 (Jan–Jun) — applicable in states like Maharashtra, Karnataka, MP, Gujarat etc. Verify state-specific due date.', freq: 'Half-Yearly' },
+    { date: 30, law: 'Labour', form: 'LWF Contribution (H1)', desc: 'Labour Welfare Fund contribution for H1 (Jan–Jun). Due dates vary by state — Maharashtra & Karnataka: 31 Jan & 31 Jul; Gujarat: 31 Dec & 30 Jun; MP: Dec 31 annually; Andhra Pradesh: 31 Jan & 31 Jul. The 30th shown is an indicative reference; always verify your state\'s specific due date.', freq: 'Half-Yearly' },
   ],
   'Jul 2026': [
     { date:  7, law: 'FEMA', form: 'ECB-2 Return', desc: 'Monthly return for external commercial borrowings', freq: 'Monthly' },
@@ -1089,7 +1190,7 @@ function renderQuarter(q) {
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;">
       ${Object.keys(QUARTERS).filter(k => k !== q).map(k => `
-        <button onclick="goQuarter('${k}')" style="display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border-radius:8px;border:1.5px solid #204262;background:#20426211;color:#204262;font-weight:700;font-size:12px;cursor:pointer;font-family:'Instrument Sans',sans-serif;letter-spacing:0.01em;transition:all .15s;" onmouseover="this.style.background='#204262';this.style.color='#fff';" onmouseout="this.style.background='#20426211';this.style.color='#204262';">
+        <button onclick="goQuarter('${k}')" style="display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border-radius:8px;border:1.5px solid #204262;background:#20426211;color:#204262;font-weight:700;font-size:12px;cursor:pointer;font-family:'Inter',sans-serif;letter-spacing:0.01em;transition:all .15s;" onmouseover="this.style.background='#204262';this.style.color='#fff';" onmouseout="this.style.background='#20426211';this.style.color='#204262';">
           ${k} <span style="font-weight:400;font-size:11px;opacity:.75">&nbsp;${QUARTERS[k].label.split(' – ')[0]}–${QUARTERS[k].label.split(' – ')[1]}</span>
         </button>`).join('')}
     </div>
@@ -1547,14 +1648,14 @@ function renderActDetail(law, activeQ) {
     return '<button onclick="renderActDetail(\'' + law + '\',\'' + q.qkey + '\')" '
       + 'style="padding:8px 18px;border-radius:8px;border:2px solid '+(act?meta.color:'var(--border)')+';'
       + 'background:'+(act?meta.color:'transparent')+';color:'+(act?'#fff':'var(--ink2)')+';'
-      + 'font-weight:700;font-size:12px;cursor:pointer;font-family:\'Instrument Sans\',sans-serif;transition:all .15s;">'
+      + 'font-weight:700;font-size:12px;cursor:pointer;font-family:Inter,sans-serif;transition:all .15s;">'
       + q.label + '</button>';
   }).join('');
   var sw = ACT_META.filter(function(a){ return a.key!==law; }).map(function(a) {
     return '<button onclick="goActDetail(\'' + a.key + '\')" '
       + 'style="display:inline-flex;align-items:center;gap:5px;padding:6px 14px;border-radius:8px;'
       + 'border:1.5px solid '+a.color+';background:'+a.color+'22;color:'+a.color+';'
-      + 'font-weight:700;font-size:11.5px;cursor:pointer;font-family:\'Instrument Sans\',sans-serif;transition:all .15s;">'
+      + 'font-weight:700;font-size:11.5px;cursor:pointer;font-family:Inter,sans-serif;transition:all .15s;">'
       + a.label + '</button>';
   }).join('');
   var html = '<button class="back-btn" onclick="goActWise()">'
@@ -2038,6 +2139,157 @@ function downloadPDF(law) {
   a.click();
   document.body.removeChild(a);
 }
+
+// ── DASHBOARD PANEL ──
+(function() {
+  var LAW_COLORS_DASH = {
+    'Income Tax': '#6b7280',
+    'GST':        '#1e8a5c',
+    'Companies':  '#9b3faa',
+    'FEMA':       '#c84b2f',
+    'Labour':     '#e8a020'
+  };
+  var LAW_LABEL_DASH = {
+    'Income Tax': 'Income Tax',
+    'GST':        'GST',
+    'Companies':  'Companies',
+    'FEMA':       'FEMA',
+    'Labour':     'Labour'
+  };
+
+  var MONTH_KEYS = ['Apr 2026','May 2026','Jun 2026','Jul 2026','Aug 2026','Sep 2026','Oct 2026','Nov 2026','Dec 2026','Jan 2027','Feb 2027','Mar 2027'];
+  var MONTH_NUM = {'Apr':3,'May':4,'Jun':5,'Jul':6,'Aug':7,'Sep':8,'Oct':9,'Nov':10,'Dec':11,'Jan':0,'Feb':1,'Mar':2};
+
+  function parseMonth(key) {
+    var parts = key.split(' ');
+    var m = MONTH_NUM[parts[0]];
+    var y = parseInt(parts[1], 10);
+    if (m < 3) y = y; // Jan-Mar are 2027
+    return { m: m, y: y };
+  }
+
+  function getFilingDate(key, dateNum) {
+    var p = parseMonth(key);
+    return new Date(p.y, p.m, dateNum);
+  }
+
+  function renderDashboard() {
+    var panel = document.getElementById('dashboard-panel');
+    if (!panel) return;
+
+    var now = new Date();
+    var todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var weekEnd = new Date(todayStart.getTime() + 7 * 86400000);
+    var monthEnd = new Date(todayStart.getTime() + 30 * 86400000);
+
+    var todayItems = [], weekItems = [], monthItems = [];
+
+    MONTH_KEYS.forEach(function(key) {
+      var filings = FILINGS[key] || [];
+      filings.forEach(function(f) {
+        var d = getFilingDate(key, f.date);
+        var diff = d - todayStart;
+        if (diff >= 0 && diff < 86400000) {
+          todayItems.push({ filing: f, key: key, dateObj: d });
+        } else if (diff >= 86400000 && diff < 7 * 86400000) {
+          weekItems.push({ filing: f, key: key, dateObj: d });
+        } else if (diff >= 7 * 86400000 && diff < 30 * 86400000) {
+          monthItems.push({ filing: f, key: key, dateObj: d });
+        }
+      });
+    });
+
+    // sort
+    function byDate(a, b) { return a.dateObj - b.dateObj || a.filing.form.localeCompare(b.filing.form); }
+    todayItems.sort(byDate); weekItems.sort(byDate); monthItems.sort(byDate);
+
+    var tabs = [
+      { id: 'dash-today', label: '🔴 Due Today', items: todayItems },
+      { id: 'dash-week',  label: '📅 This Week',  items: weekItems },
+      { id: 'dash-month', label: '📆 Next 30 Days', items: monthItems },
+    ];
+
+    var tabsHtml = '<div class="dash-panel-tabs">';
+    tabs.forEach(function(t, i) {
+      var cnt = t.items.length;
+      tabsHtml += '<button class="dash-tab' + (i === 0 ? ' active' : '') + '" onclick="switchDashTab(this,\'' + t.id + '\')">'
+        + t.label
+        + '<span class="dash-tab-count' + (cnt === 0 ? ' zero' : '') + '">' + cnt + '</span>'
+        + '</button>';
+    });
+    tabsHtml += '</div>';
+
+    function renderItems(items, labelClass, labelText) {
+      if (!items.length) {
+        return '<div class="dash-empty"><div class="dash-empty-icon">✅</div>No deadlines in this window — you\'re clear!</div>';
+      }
+      var h = '';
+      var lastDay = null;
+      items.forEach(function(item) {
+        var f = item.filing;
+        var d = item.dateObj;
+        var dayStr = d.getDate();
+        var monStr = d.toLocaleString('en-IN', {month:'short'});
+        var c = LAW_COLORS_DASH[f.law] || '#8a8178';
+        var lbl = LAW_LABEL_DASH[f.law] || f.law;
+        var isToday = (d - new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate())) < 86400000
+                      && (d - new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate())) >= 0;
+        var dayKey = monStr + '-' + dayStr;
+        var qKey = (['Apr 2026','May 2026','Jun 2026'].indexOf(item.key) !== -1) ? 'Q1'
+                 : (['Jul 2026','Aug 2026','Sep 2026'].indexOf(item.key) !== -1) ? 'Q2'
+                 : (['Oct 2026','Nov 2026','Dec 2026'].indexOf(item.key) !== -1) ? 'Q3' : 'Q4';
+
+        h += '<div class="dash-row" data-q="' + qKey + '" data-month="' + item.key + '" data-date="' + f.date + '">'
+          + '<div class="dash-row-date' + (isToday ? ' today-date' : '') + '">'
+          + '<span class="dd">' + dayStr + '</span>' + monStr
+          + '</div>'
+          + '<div class="dash-row-info">'
+          + '<div class="dash-row-form">' + f.form.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>'
+          + '<div class="dash-row-desc">' + f.desc.substring(0, 80).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + (f.desc.length > 80 ? '…' : '') + '</div>'
+          + '</div>'
+          + '<span class="dash-row-badge" style="background:' + c + '">' + lbl + '</span>'
+          + '</div>';
+      });
+      return h;
+    }
+
+    var bodiesHtml = '';
+    tabs.forEach(function(t, i) {
+      var labelClass = i === 0 ? 'dash-today-label' : 'dash-week-label';
+      bodiesHtml += '<div id="' + t.id + '" class="dash-body" style="' + (i !== 0 ? 'display:none' : '') + '">'
+        + renderItems(t.items, labelClass, t.label)
+        + '</div>';
+    });
+
+    panel.innerHTML = '<div class="dash-panel">' + tabsHtml + bodiesHtml + '</div>';
+
+    // attach click handlers
+    panel.querySelectorAll('.dash-row[data-q]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        var q = this.getAttribute('data-q');
+        var month = this.getAttribute('data-month');
+        var dateNum = parseInt(this.getAttribute('data-date'), 10);
+        goQuarter(q);
+        setTimeout(function() { goDetail(month, dateNum); }, 350);
+      });
+    });
+  }
+
+  window.switchDashTab = function(btn, id) {
+    document.querySelectorAll('.dash-tab').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('.dash-body').forEach(function(b) { b.style.display = 'none'; });
+    var el = document.getElementById(id);
+    if (el) el.style.display = '';
+  };
+
+  // Run after DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderDashboard);
+  } else {
+    renderDashboard();
+  }
+})();
 
 // ── SEARCH ──
 var searchFilter = 'All';
